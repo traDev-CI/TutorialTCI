@@ -1,9 +1,12 @@
-language: bash
+language: python
+python:
+ -3.4
 
-sudo: required
-
-services:
- - docker
-
-script:
-  - make lint_the_things
+jobs:
+  include:
+    - stage: build
+      script: echo 20
+    - stage: test
+      script: echo "Dayanne"
+    - stage: deploy
+      script: echo "Al gun día"
