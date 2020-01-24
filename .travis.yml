@@ -9,4 +9,6 @@ jobs:
     - stage: test
       script: echo "Dayanne"
     - stage: deploy
+      name: "Deploy package"
       script: echo "Al gun día"
+      name: "Deploy your love"
